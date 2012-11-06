@@ -17,7 +17,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.title = @"ViewController";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 400, 44)];
+    label.backgroundColor = [UIColor clearColor];
+    //label.font = [UIFont boldSystemFontOfSize:20.0];
+    label.font = [UIFont fontWithName:@"Lato" size:20.0];
+    label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    label.textAlignment = UITextAlignmentCenter;
+    label.textColor =[UIColor whiteColor];
+    label.text=self.title;
+    self.navigationItem.titleView = label;
 }
 
 - (void)didReceiveMemoryWarning

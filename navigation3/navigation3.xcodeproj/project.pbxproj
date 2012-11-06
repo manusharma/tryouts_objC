@@ -20,6 +20,8 @@
 		99C38B691649B4E800D21AB5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B671649B4E800D21AB5 /* ViewController.xib */; };
 		99C38B721649B69300D21AB5 /* modalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C38B701649B69300D21AB5 /* modalClass.m */; };
 		99C38B731649B69300D21AB5 /* modalClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B711649B69300D21AB5 /* modalClass.xib */; };
+		99C38B7E1649BDA500D21AB5 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B7C1649BDA500D21AB5 /* Lato-Hai.ttf */; };
+		99C38B7F1649BDA500D21AB5 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B7D1649BDA500D21AB5 /* transparent.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		99C38B6F1649B69300D21AB5 /* modalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modalClass.h; sourceTree = "<group>"; };
 		99C38B701649B69300D21AB5 /* modalClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modalClass.m; sourceTree = "<group>"; };
 		99C38B711649B69300D21AB5 /* modalClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalClass.xib; sourceTree = "<group>"; };
+		99C38B7C1649BDA500D21AB5 /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
+		99C38B7D1649BDA500D21AB5 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			children = (
 				99C38B521649B4E800D21AB5 /* navigation3 */,
 				99C38B4B1649B4E800D21AB5 /* Frameworks */,
+				99C38B531649B4E800D21AB5 /* Supporting Files */,
 				99C38B491649B4E800D21AB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +98,6 @@
 				99C38B641649B4E800D21AB5 /* ViewController.h */,
 				99C38B651649B4E800D21AB5 /* ViewController.m */,
 				99C38B671649B4E800D21AB5 /* ViewController.xib */,
-				99C38B531649B4E800D21AB5 /* Supporting Files */,
 				99C38B6F1649B69300D21AB5 /* modalClass.h */,
 				99C38B701649B69300D21AB5 /* modalClass.m */,
 				99C38B711649B69300D21AB5 /* modalClass.xib */,
@@ -104,6 +108,8 @@
 		99C38B531649B4E800D21AB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99C38B7C1649BDA500D21AB5 /* Lato-Hai.ttf */,
+				99C38B7D1649BDA500D21AB5 /* transparent.png */,
 				99C38B541649B4E800D21AB5 /* navigation3-Info.plist */,
 				99C38B551649B4E800D21AB5 /* InfoPlist.strings */,
 				99C38B581649B4E800D21AB5 /* main.m */,
@@ -113,6 +119,7 @@
 				99C38B621649B4E800D21AB5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = navigation3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +179,8 @@
 				99C38B631649B4E800D21AB5 /* Default-568h@2x.png in Resources */,
 				99C38B691649B4E800D21AB5 /* ViewController.xib in Resources */,
 				99C38B731649B69300D21AB5 /* modalClass.xib in Resources */,
+				99C38B7E1649BDA500D21AB5 /* Lato-Hai.ttf in Resources */,
+				99C38B7F1649BDA500D21AB5 /* transparent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "navigation3/navigation3-Prefix.pch";
 				INFOPLIST_FILE = "navigation3/navigation3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "navigation3/navigation3-Prefix.pch";
 				INFOPLIST_FILE = "navigation3/navigation3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
