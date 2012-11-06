@@ -18,6 +18,8 @@
 		99C38B631649B4E800D21AB5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B621649B4E800D21AB5 /* Default-568h@2x.png */; };
 		99C38B661649B4E800D21AB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C38B651649B4E800D21AB5 /* ViewController.m */; };
 		99C38B691649B4E800D21AB5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B671649B4E800D21AB5 /* ViewController.xib */; };
+		99C38B721649B69300D21AB5 /* modalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C38B701649B69300D21AB5 /* modalClass.m */; };
+		99C38B731649B69300D21AB5 /* modalClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B711649B69300D21AB5 /* modalClass.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		99C38B641649B4E800D21AB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		99C38B651649B4E800D21AB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		99C38B681649B4E800D21AB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		99C38B6F1649B69300D21AB5 /* modalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modalClass.h; sourceTree = "<group>"; };
+		99C38B701649B69300D21AB5 /* modalClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modalClass.m; sourceTree = "<group>"; };
+		99C38B711649B69300D21AB5 /* modalClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalClass.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				99C38B651649B4E800D21AB5 /* ViewController.m */,
 				99C38B671649B4E800D21AB5 /* ViewController.xib */,
 				99C38B531649B4E800D21AB5 /* Supporting Files */,
+				99C38B6F1649B69300D21AB5 /* modalClass.h */,
+				99C38B701649B69300D21AB5 /* modalClass.m */,
+				99C38B711649B69300D21AB5 /* modalClass.xib */,
 			);
 			path = navigation3;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				99C38B611649B4E800D21AB5 /* Default@2x.png in Resources */,
 				99C38B631649B4E800D21AB5 /* Default-568h@2x.png in Resources */,
 				99C38B691649B4E800D21AB5 /* ViewController.xib in Resources */,
+				99C38B731649B69300D21AB5 /* modalClass.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				99C38B591649B4E800D21AB5 /* main.m in Sources */,
 				99C38B5D1649B4E800D21AB5 /* AppDelegate.m in Sources */,
 				99C38B661649B4E800D21AB5 /* ViewController.m in Sources */,
+				99C38B721649B69300D21AB5 /* modalClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
