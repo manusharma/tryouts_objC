@@ -22,6 +22,8 @@
 		99C38B731649B69300D21AB5 /* modalClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B711649B69300D21AB5 /* modalClass.xib */; };
 		99C38B7E1649BDA500D21AB5 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B7C1649BDA500D21AB5 /* Lato-Hai.ttf */; };
 		99C38B7F1649BDA500D21AB5 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C38B7D1649BDA500D21AB5 /* transparent.png */; };
+		99C6D9A8164A44D500A00CEF /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C6D9A6164A44D500A00CEF /* navBar.png */; };
+		99C6D9A9164A44D500A00CEF /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C6D9A7164A44D500A00CEF /* navBar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		99C38B711649B69300D21AB5 /* modalClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalClass.xib; sourceTree = "<group>"; };
 		99C38B7C1649BDA500D21AB5 /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
 		99C38B7D1649BDA500D21AB5 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		99C6D9A6164A44D500A00CEF /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navBar.png; path = navigation3/Assets/navBar.png; sourceTree = "<group>"; };
+		99C6D9A7164A44D500A00CEF /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar@2x.png"; path = "navigation3/Assets/navBar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				99C38B521649B4E800D21AB5 /* navigation3 */,
+				99C6D9A4164A44BD00A00CEF /* Assets */,
 				99C38B4B1649B4E800D21AB5 /* Frameworks */,
 				99C38B531649B4E800D21AB5 /* Supporting Files */,
 				99C38B491649B4E800D21AB5 /* Products */,
@@ -120,6 +125,15 @@
 			);
 			name = "Supporting Files";
 			path = navigation3;
+			sourceTree = "<group>";
+		};
+		99C6D9A4164A44BD00A00CEF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				99C6D9A6164A44D500A00CEF /* navBar.png */,
+				99C6D9A7164A44D500A00CEF /* navBar@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,8 @@
 				99C38B731649B69300D21AB5 /* modalClass.xib in Resources */,
 				99C38B7E1649BDA500D21AB5 /* Lato-Hai.ttf in Resources */,
 				99C38B7F1649BDA500D21AB5 /* transparent.png in Resources */,
+				99C6D9A8164A44D500A00CEF /* navBar.png in Resources */,
+				99C6D9A9164A44D500A00CEF /* navBar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +329,7 @@
 				99C38B6E1649B4E800D21AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -34,6 +34,14 @@
     [self.modalButton.titleLabel setFont:[UIFont fontWithName:@"Lato" size:14]];
     CGFloat scale = [UIScreen mainScreen].scale;
     //NSlog(@"%@", scale);
+    UIImage *navImage = [UIImage imageNamed:@"navBar.png"];
+    [self.navigationController.navigationBar setBackgroundImage:navImage forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *plus = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pushNewController)];
+        [self.navigationItem setRightBarButtonItem:plus];
+}
+
+
+-(void) pushNewController{
     
 }
 
