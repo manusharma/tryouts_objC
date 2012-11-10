@@ -1,20 +1,18 @@
 //
-//  modalClass.m
+//  pushView.m
 //  navigation3
 //
-//  Created by Manu Sharma on 11/6/12.
+//  Created by Manu Sharma on 11/9/12.
 //  Copyright (c) 2012 Manu Sharma. All rights reserved.
 //
 
-#import "modalClass.h"
 #import "pushView.h"
-#import "ViewController.h"
 
-@interface modalClass ()
+@interface pushView ()
 
 @end
 
-@implementation modalClass
+@implementation pushView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"modal View Controller";
-    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -39,8 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)modalDown:(id)sender {
-    ViewController *vc = [[ViewController alloc] init];
-    [self presentModalViewController:vc animated:YES];
-}
 @end

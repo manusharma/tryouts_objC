@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "modalClass.h"
+#import "pushView.h"
 @interface ViewController ()
 
 @end
@@ -42,7 +43,12 @@
 
 
 -(void) pushNewController{
-    
+    ViewController *cv = [[ViewController alloc] init];
+    modalClass *mc = [[modalClass alloc] initWithNibName:@"modalClass" bundle:nil];
+    //for(int i=0; i<=)
+    [self setModalPresentationStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentModalViewController:mc animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,9 +58,21 @@
 }
 
 - (IBAction)modalButton:(id)sender {
+    //[self pushNewController];
+    pushView *pv = [[pushView alloc] init];
+    modalClass *mc = [[modalClass alloc] init];
+    ViewController *vc = [[ViewController alloc] init];
+    NSArray *navArray = [[NSArray alloc] initWithObjects:vc, mc, nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
+    [navController setViewControllers:navArray];
+    [self presentModalViewController:navController animated:YES];
 }
 - (void)viewDidUnload {
     [self setModalButton:nil];
     [super viewDidUnload];
+}
+- (IBAction)pushController:(id)sender {
+    pushView *pv = [[pushView alloc] initWithNibName:@"pushView" bundle:nil];
+    [self.navigationController pushViewController:pv animated:YES];
 }
 @end

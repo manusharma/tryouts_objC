@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface modalClass : UIViewController
+- (IBAction)modalDown:(id)sender;
 
 @end
