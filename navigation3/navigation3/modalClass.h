@@ -10,5 +10,5 @@
 
 @interface modalClass : UIViewController
 - (IBAction)modalDown:(id)sender;
-
+- (id)initWithDismissCallback:(void(^)())callback;
 @end

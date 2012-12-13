@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992E745B164F2310006210F0 /* Dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 992E7459164F2310006210F0 /* Dialog.png */; };
+		992E745C164F2310006210F0 /* Dialog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 992E745A164F2310006210F0 /* Dialog@2x.png */; };
+		998AB888165429A100B0D633 /* imageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 998AB886165429A100B0D633 /* imageVC.m */; };
+		998AB889165429A100B0D633 /* imageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998AB887165429A100B0D633 /* imageVC.xib */; };
 		99E93D0D164E17D000375FA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E93D0C164E17D000375FA4 /* UIKit.framework */; };
 		99E93D0F164E17D000375FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E93D0E164E17D000375FA4 /* Foundation.framework */; };
 		99E93D11164E17D000375FA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E93D10164E17D000375FA4 /* CoreGraphics.framework */; };
@@ -25,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		992E7458164F1814006210F0 /* segoeuil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuil.ttf; sourceTree = "<group>"; };
+		992E7459164F2310006210F0 /* Dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dialog.png; sourceTree = "<group>"; };
+		992E745A164F2310006210F0 /* Dialog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dialog@2x.png"; sourceTree = "<group>"; };
+		998AB885165429A100B0D633 /* imageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageVC.h; sourceTree = "<group>"; };
+		998AB886165429A100B0D633 /* imageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageVC.m; sourceTree = "<group>"; };
+		998AB887165429A100B0D633 /* imageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageVC.xib; sourceTree = "<group>"; };
 		99E93D08164E17D000375FA4 /* navigationModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigationModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E93D0C164E17D000375FA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		99E93D0E164E17D000375FA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +112,9 @@
 				99E93D33164E17FE00375FA4 /* view2.m */,
 				99E93D34164E17FE00375FA4 /* view2.xib */,
 				99E93D13164E17D000375FA4 /* Supporting Files */,
+				998AB885165429A100B0D633 /* imageVC.h */,
+				998AB886165429A100B0D633 /* imageVC.m */,
+				998AB887165429A100B0D633 /* imageVC.xib */,
 			);
 			path = navigationModal;
 			sourceTree = "<group>";
@@ -109,7 +122,10 @@
 		99E93D13164E17D000375FA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				992E7459164F2310006210F0 /* Dialog.png */,
+				992E745A164F2310006210F0 /* Dialog@2x.png */,
 				99E93D37164E195900375FA4 /* transparent.png */,
+				992E7458164F1814006210F0 /* segoeuil.ttf */,
 				99E93D14164E17D000375FA4 /* navigationModal-Info.plist */,
 				99E93D15164E17D000375FA4 /* InfoPlist.strings */,
 				99E93D18164E17D000375FA4 /* main.m */,
@@ -180,6 +196,9 @@
 				99E93D2C164E17D000375FA4 /* ViewController_iPad.xib in Resources */,
 				99E93D36164E17FE00375FA4 /* view2.xib in Resources */,
 				99E93D38164E195900375FA4 /* transparent.png in Resources */,
+				992E745B164F2310006210F0 /* Dialog.png in Resources */,
+				992E745C164F2310006210F0 /* Dialog@2x.png in Resources */,
+				998AB889165429A100B0D633 /* imageVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +213,7 @@
 				99E93D1D164E17D000375FA4 /* AppDelegate.m in Sources */,
 				99E93D26164E17D000375FA4 /* ViewController.m in Sources */,
 				99E93D35164E17FE00375FA4 /* view2.m in Sources */,
+				998AB888165429A100B0D633 /* imageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +305,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "navigationModal/navigationModal-Prefix.pch";
 				INFOPLIST_FILE = "navigationModal/navigationModal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +317,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "navigationModal/navigationModal-Prefix.pch";
 				INFOPLIST_FILE = "navigationModal/navigationModal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -320,6 +342,7 @@
 				99E93D31164E17D000375FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

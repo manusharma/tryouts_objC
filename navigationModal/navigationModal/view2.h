@@ -10,5 +10,8 @@
 
 @interface view2 : UIViewController
 - (id)initWithDismissCallback:(void(^)())callback;
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
+- (IBAction)dismissButtonAction:(id)sender;
+- (IBAction)notificationBtn:(id)sender;
 
 @end

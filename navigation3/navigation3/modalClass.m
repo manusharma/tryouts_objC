@@ -11,19 +11,20 @@
 #import "ViewController.h"
 
 @interface modalClass ()
-
+@property (copy, nonatomic) void (^dismissCallback)();
 @end
 
 @implementation modalClass
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithDismissCallback:(void(^)())callback
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:@"view2" bundle:nil];
     if (self) {
-        // Custom initialization
+        self.dismissCallback = callback;
     }
     return self;
 }
+
 
 - (void)viewDidLoad
 {
@@ -40,7 +41,9 @@
 }
 
 - (IBAction)modalDown:(id)sender {
-    ViewController *vc = [[ViewController alloc] init];
-    [self presentModalViewController:vc animated:YES];
+    //ViewController *vc = [[ViewController alloc] init];
+    //[self presentModalViewController:vc animated:YES];
+    
+    self.dismissCallback();
 }
 @end

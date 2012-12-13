@@ -75,4 +75,22 @@
     pushView *pv = [[pushView alloc] initWithNibName:@"pushView" bundle:nil];
     [self.navigationController pushViewController:pv animated:YES];
 }
+
+- (IBAction)newModal:(id)sender {
+    modalClass *mc = [[modalClass alloc] initWithNibName:@"modalClass" bundle:nil];
+    mc.view.frame = CGRectMake(self.view.frame.size.width/2 - mc.view.frame.size.width/2, self.view.frame.size.height, mc.view.frame.size.width-50, mc.view.frame.size.height-50);
+    
+    
+    [self.view addSubview:mc.view];
+    [self addChildViewController:mc];
+    
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         mc.view.frame = CGRectMake(self.view.frame.size.width/2 - mc.view.frame.size.width/2, 0, mc.view.frame.size.width-20, mc.view.frame.size.height-20);
+                     }completion:^(BOOL finished) {
+                         
+                     }];
+    
+
+}
 @end

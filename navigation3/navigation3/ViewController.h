@@ -12,5 +12,6 @@
 - (IBAction)modalButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *modalButton;
 - (IBAction)pushController:(id)sender;
+- (IBAction)newModal:(id)sender;
 
 @end
