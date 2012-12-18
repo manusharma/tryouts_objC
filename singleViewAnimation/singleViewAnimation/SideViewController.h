@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SideViewController : UIViewController
+- (IBAction)swipeGesture:(id)sender;
 
 - (id)initWithDismissCallback: (void(^)())callback;
 @end

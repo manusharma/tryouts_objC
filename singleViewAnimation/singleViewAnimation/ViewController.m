@@ -18,7 +18,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UISwipeGestureRecognizer *rightRecognizer;
+    rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFrom:)];
+    [rightRecognizer setDirection: UISwipeGestureRecognizerDirectionRight];
+    [[self view] addGestureRecognizer:rightRecognizer];
+}
+
+-(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer {
+    NSLog(@"get gesture");
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    
+    {
+        NSLog(@"get gesture right");
+        [self animate];
+    }
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"get gesture Left");
+               
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,11 +45,16 @@
 }
 static int a=0;
 - (IBAction)btnAnimate:(id)sender {
+    [self animate];
+   }
+
+-(void) animate{
     
     __block SideViewController *kim = [[SideViewController alloc] initWithDismissCallback:^ {
         [UIView animateWithDuration:0.1
                          animations:^{
-                             kim.view.frame = CGRectMake(0, self.view.frame.size.height, kim.view.frame.size.width, kim.view.frame.size.height);
+                             kim.view.frame = CGRectMake(0, 0, 0, self.view.frame.size.height);
+                             self.mainView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
                          }completion:^(BOOL finished) {
                              if (finished) {
                                  [kim removeFromParentViewController];
@@ -59,5 +81,6 @@ static int a=0;
                          a=1;
                      }];
     
+
 }
 @end
